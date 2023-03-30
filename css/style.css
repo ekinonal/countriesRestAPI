@@ -243,7 +243,7 @@ nav {
 
 
 strong {
-  color:#fff;
+  color:var(--text2);
 }
 /* Grid Yapısı */
 
