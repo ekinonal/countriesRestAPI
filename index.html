@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-color="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countries</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/16c6ca784e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navigasyon Bar -->
+  <nav>
+    <div class="container navbar">
+      <h3 class="title">Where in the world?</h3>
+      <div class="toggleArea">
+        <input type="checkbox" class="toggleCheckBox" onclick="toggleCheckBox(this)" />
+        <div><i class="fa-regular fa-moon toggleIcon toggleText"></i></div>
+        <div class="toggleText">Dark Mode</div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigasyon Bar  -->
+
+  <!-- Search Alanı -->
+  <div class="container">
+    <section class="searchArea">
+      <div class="searchBox">
+        <div class="searchIco dark" onclick="searchCountry()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <input type="text" id="searchInput" placeholder="Search for a country..." class="dark" />
+      </div>
+      <div class="filterArea">
+        <div class="filterPlaceHolder" onclick="showDropdown()">
+          <p class="filterText">Filter by Region</p>
+          <div class="filterIcon"><i class="fa fa-angle-down"></i></div>
+        </div>
+        <ul class="filterDiv">
+          <li class="option"  onclick="showCountries()">Default</li>
+          <li class="option" id="Africa" onclick="showByRegion(this)">Africa</li>
+          <li class="option" id="Americas" onclick="showByRegion(this)">America</li>
+          <li class="option" id="Asia" onclick="showByRegion(this)">Asia</li>
+          <li class="option" id="Europe" onclick="showByRegion(this)">Europe</li>
+          <li class="option" id="Oceania" onclick="showByRegion(this)">Oceania</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <!-- Search Alanı -->
+
+  <!-- Grid-->
+  <div class="container">
+    <div class="countryContainer">
+      <div class="gridContainer"></div>
+    </div>
+  </div>
+</body>
+<script src="app.js"></script>
+
+</html>
