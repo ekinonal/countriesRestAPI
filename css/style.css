@@ -297,7 +297,7 @@ strong {
   }
   .borderTitle {
     font-weight: bold;
-    color: #fff;
+    color: var(--text);;
     width: 100%;
     display: block;
   }
