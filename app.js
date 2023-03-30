@@ -182,7 +182,7 @@ function backButton(element) {
 /* Buton ve select fonksiyonları */
 
 function bordersLoop (borders){
- if(typeof borders == "undefined") return;
+ if(typeof borders == "undefined") return "";
   let borderCountries = "";
   for (let i = 0; i < borders.length; i++) {
    borderCountries += `<button class="bCountry" disabled="disabled">${borders[i]}</button>`
