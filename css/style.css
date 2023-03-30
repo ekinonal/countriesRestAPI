@@ -175,6 +175,7 @@ nav {
 .card {
   border-radius: 5px;
   background-color: var(--navbar-bg);
+  box-shadow: var(--box-shadow)
   cursor: pointer;
   overflow: hidden;
 }
