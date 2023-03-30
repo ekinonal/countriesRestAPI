@@ -233,7 +233,7 @@ nav {
 }
 
 .borders {margin-top:30px;}
-.borderTitle {font-weight: bold;color:#fff;}
+.borderTitle {font-weight: bold;color:var(--text)}
 .bCountry {  background: hsl(209, 23%, 22%);
   color: #fff;
   border-radius: 2px;
