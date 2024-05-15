@@ -129,7 +129,10 @@ async function showByRegion(value) {
 /* Arama fonksiyonu */
 async function searchCountry() {
   const countryName = document.querySelector("#searchInput").value == "" ? "all" : document.querySelector("#searchInput").value ;
- if ( countryName == "all"){showCountries() return;} 
+if (countryName === "all") {
+    showCountries();
+    return;
+}
   const countryData = await getCountry(countryName);
   divClear();
   
